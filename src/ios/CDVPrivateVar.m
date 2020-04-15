@@ -5,7 +5,7 @@
 #import "CDVPrivateVar.h"
 #import <Cordova/CDVPlugin.h>
 
-@implementation CDVPrivateVar
+@implementation PrivateVar
 
 - (void)get:(CDVInvokedUrlCommand*)command
 {

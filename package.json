@@ -1,9 +1,26 @@
 {
-  "version": "0.0.4",
-  "name": "com-sistepar-cordova-privatevar",
-  "cordova_name": "Private Variable",
-  "platforms": [
-    "android"
+  "name": "cordova-plugin-privatevar",
+  "version": "1.0.0",
+  "description": "Cordova Private Variable Plugin",
+  "cordova": {
+    "id": "cordova-plugin-privatevar",
+    "platforms": [
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.com/sistepar/app/cordova-plugin-privatevar.git"
+  },
+  "keywords": [
+    "sistepar",
+    "cordova",
+    "private",
+    "variable",
+	  "hide",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
   ],
   "engines": [
     {
@@ -11,21 +28,8 @@
       "version": ">=3.0.0"
     }
   ],
-  "description": "To get data sensitive from java native",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/rgfpy/cordova-privatevar.git"
-  },
-  "keywords": [
-    "sistepar",
-    "cordova",
-    "private",
-    "variable",
-	"hide",
-    "ecosystem:cordova",
-    "cordova-android"
-  ],
+  
   "author": "Sistepar",
   "license": "MIT Licence",
-  "homepage": "sistepar.com"
+  "homepage": "https://gitlab.com/sistepar/app/cordova-plugin-privatevar#readme"
 }

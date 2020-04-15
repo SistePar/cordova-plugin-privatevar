@@ -6,25 +6,25 @@ El plugin es sencillo se crea una función "get" que recibe y devuelve parámetr
 
 * Para agregar desde el CLI de Cordova:
 
-	cordova plugin add https://github.com/rgfpy/cordova-privatevar.git
+	cordova plugin add https://gitlab.com/sistepar/app/cordova-plugin-privatevar.git
 
 En la sección del código Java en com/sistepar/cordova/plugin/PrivatevarPlugin.java se puede agregar todos los datos 
 que uno desea que le devuelva en Json.
 	
 	/* Editar Json para devolver parámetros */
-	json.put("apiUrl", "http://api.sistepar.com");
+	json.put("apiUrl", "https://api.sistepar.com");
 	json.put("apiKey", "12345678");
 
 Para usarlo desde Cordova dentro del evento "deviceredy":
 
-	pVar.get('Robert', getResult);
+	pVar.get('', getResult);
 	
 	function getResult(response) {
 		alert(JSON.stringify(response));
 	}
 
 
-# By <a href="http://sistepar.com">sistepar.com</a>
+# By <a href="https://sistepar.com">sistepar.com</a>
 
 # License
 The MIT License

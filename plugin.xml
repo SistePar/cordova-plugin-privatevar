@@ -1,24 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<plugin id="com-sistepar-cordova-privatevar" version="0.0.4" xmlns:android="http://schemas.android.com/apk/res/android" xmlns="http://apache.org/cordova/ns/plugins/1.0">
-	<name>Private Variable</name>
-	<description>To get data sensitive from java native</description>
+
+<plugin id="cordova-plugin-privatevar" version="1.0.0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns="http://apache.org/cordova/ns/plugins/1.0">
+	<name>Cordova Private Variable Plugin</name>
+	<description>To get data sensitive from native code</description>
 	<author>sistepar.com</author>
     <license>MIT Licence</license>
-	<keywords>cordova,private,variable</keywords>
+	<keywords>cordova,private,variable,var</keywords>
+
 	<engines>
 		<engine name="cordova" version=">=3.0.0"/>
 	</engines>
 	
-	<js-module name="PrivatevarPlugin" src="www/privatevar.js">
+	<js-module name="PrivateVar" src="www/privatevar.js">
 		<clobbers target="pVar" />
+		<clobbers target="cordova.plugins.pVar" />
 	</js-module>
 	
+	<!-- android -->
 	<platform name="android">
-		<config-file parent="/*" target="res/xml/config.xml">
-			<feature name="PrivatevarPlugin">
-				<param name="android-package" value="com.sistepar.cordova.privatevar.PrivatevarPlugin"/>
+		<config-file target="config.xml" parent="/*">
+			<feature name="PrivateVar">
+				<param name="android-package" value="com.sistepar.cordova.privatevar.PrivateVar"/>
 			</feature>
 		</config-file>
-		<source-file src="src/android/PrivatevarPlugin.java" target-dir="src/com/sistepar/cordova/privatevar"/>
+
+		<source-file src="src/android/PrivateVar.java" target-dir="src/com/sistepar/cordova/privatevar"/>
 	</platform>
+
+	<!-- ios -->
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="PrivateVar">
+                <param name="ios-package" value="PrivateVar" onload="true" />
+            </feature>
+        </config-file>
+
+        <header-file src="src/ios/PrivateVar.h" />
+        <source-file src="src/ios/PrivateVar.m" />
+    </platform>
 </plugin>

@@ -11,9 +11,8 @@
 		<engine name="cordova" version=">=3.0.0"/>
 	</engines>
 	
-	<js-module name="PrivateVar" src="www/privatevar.js">
+	<js-module src="www/privatevar.js" name="PrivateVar">
 		<clobbers target="pVar" />
-		<clobbers target="cordova.plugins.pVar" />
 	</js-module>
 	
 	<!-- android -->
@@ -31,11 +30,11 @@
     <platform name="ios">
         <config-file target="config.xml" parent="/*">
             <feature name="PrivateVar">
-                <param name="ios-package" value="CDVPrivateVar" onload="true" />
+                <param name="ios-package" value="PrivateVar" onload="true" />
             </feature>
         </config-file>
 
-        <header-file src="src/ios/CDVPrivateVar.h" />
-        <source-file src="src/ios/CDVPrivateVar.m" />
+        <header-file src="src/ios/PrivateVar.h" />
+        <source-file src="src/ios/PrivateVar.m" />
     </platform>
 </plugin>

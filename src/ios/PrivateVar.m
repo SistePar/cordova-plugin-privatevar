@@ -1,11 +1,11 @@
 /**
- * CDVPrivateVar.m Cordova Plugin Implementation
+ * PrivateVar.m Cordova Plugin Implementation
  */
 
-#import "CDVPrivateVar.h"
+#import "PrivateVar.h"
 #import <Cordova/CDVPlugin.h>
 
-@implementation CDVPrivateVar
+@implementation PrivateVar
 
 - (void)get:(CDVInvokedUrlCommand*)command
 {

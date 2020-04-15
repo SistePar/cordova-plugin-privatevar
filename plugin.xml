@@ -35,7 +35,7 @@
             </feature>
         </config-file>
 
-        <header-file src="src/ios/PrivateVar.h" />
-        <source-file src="src/ios/PrivateVar.m" />
+        <header-file src="src/ios/CDVPrivateVar.h" />
+        <source-file src="src/ios/CDVPrivateVar.m" />
     </platform>
 </plugin>

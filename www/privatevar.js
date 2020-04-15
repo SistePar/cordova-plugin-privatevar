@@ -1,5 +1,12 @@
-module.exports = {
-	get: function (parmPost, successCallback, errorCallback) {
-		cordova.exec(successCallback, errorCallback, "PrivateVar", "get", []);
-	}
+var argscheck = require('cordova/argscheck'),
+    utils = require('cordova/utils'),
+    exec = require('cordova/exec');
+
+var PrivateVar = function() {
 };
+
+PrivateVar.get = function() {
+	cordova.exec(null, null, "PrivateVar", "get", []);
+};
+
+module.exports = PrivateVar;

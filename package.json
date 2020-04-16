@@ -9,10 +9,6 @@
       "ios"
     ]
   },
-  "repository": {
-    "type": "git",
-    "url": "https://gitlab.com/sistepar.com/cordova-plugin-privatevar.git"
-  },
   "keywords": [
     "sistepar",
     "cordova",
@@ -29,8 +25,14 @@
       "version": ">=3.2.0"
     }
   ],
-  
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.com/sistepar.com/cordova-plugin-privatevar.git"
+  },
+  "bugs": {
+    "url": "https://gitlab.com/sistepar.com/cordova-plugin-privatevar/issues"
+  },
+  "homepage": "https://gitlab.com/sistepar.com/cordova-plugin-privatevar#readme",
   "author": "Sistepar",
-  "license": "MIT Licence",
-  "homepage": "https://gitlab.com/sistepar.com/cordova-plugin-privatevar#readme"
+  "license": "MIT Licence"
 }

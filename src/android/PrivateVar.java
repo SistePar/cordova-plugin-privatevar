@@ -6,7 +6,7 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-public class PrivatevarPlugin extends CordovaPlugin {
+public class Privatevar extends CordovaPlugin {
     /**
      * Ejecutar request y response a PluginResult
      * @param action          The action to execute.
@@ -16,7 +16,7 @@ public class PrivatevarPlugin extends CordovaPlugin {
      * @throws JSONException
      */
     public boolean execute(String action, JSONArray args, final CallbackContext callback) throws JSONException {
-        if ("get".equals(action)) {
+        if ("getDatas".equals(action)) {
             JSONObject json = new JSONObject();
 
             /* Edit here to return data in json */

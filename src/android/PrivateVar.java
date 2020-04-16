@@ -19,14 +19,11 @@ public class PrivatevarPlugin extends CordovaPlugin {
         if ("get".equals(action)) {
             JSONObject json = new JSONObject();
 
-            /* Editar Json para devolver parámetros */
-            json.put("apiUrl", "http://api.sistepar.com");
-            json.put("apiKey", "12345678");
+            /* Edit here to return data in json */
+            json.put("apiUrl", "https://api.sistepar.com");
+            json.put("apiKey", "12345");
 
             callback.success(json);
-
-            //PluginResult result = new PluginResult(PluginResult.Status.OK, json);
-            //callback.sendPluginResult(result);
 			
         } else {
             return false;

@@ -2,7 +2,6 @@
  * PrivateVar.m Cordova Plugin Implementation
  */
 
-#import <Cordova/CDV.h>
 #import "PrivateVar.h"
 
 @implementation PrivateVar
@@ -11,6 +10,7 @@
 {
     NSString* callbackId = command.callbackId;
     NSDictionary* datasReturn = [self getDatasToReturn];
+
     CDVPluginResult* pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsDictionary:datasReturn];
 
     [self.commandDelegate sendPluginResult:pluginResult callbackId:callbackId];
@@ -18,9 +18,10 @@
 
 - (NSDictionary*)getDatasToReturn
 {
+    /* Edit here to return data in json */
     return @{
-             @"manufacturer": @"Apple",
-             @"platform": @"iOS",
+             @"apiUrl": @"https://api.sistepar.com",
+             @"apiKey": @"12345",
              };
 }
 

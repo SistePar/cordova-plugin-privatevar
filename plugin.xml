@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<plugin id="cordova-plugin-privatevar" version="1.0.0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns="http://apache.org/cordova/ns/plugins/1.0">
+<plugin id="sistepar-cordova-plugin-privatevar" version="1.0.0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns="http://apache.org/cordova/ns/plugins/1.0">
 	<name>Cordova Private Variable Plugin</name>
 	<description>To get data sensitive from native code</description>
 	<author>sistepar.com</author>

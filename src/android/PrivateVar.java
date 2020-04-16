@@ -6,7 +6,7 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-public class Privatevar extends CordovaPlugin {
+public class PrivateVar extends CordovaPlugin {
     /**
      * Ejecutar request y response a PluginResult
      * @param action          The action to execute.

@@ -1,22 +1,24 @@
-# Cordova - Private Variable
+# CORDOVA - PRIVATE VARIABLE PLUGIN
 
 The plugin is simple, a function "get" in JavaScript is created and it returns data of type JSON.
 
-# INSTALL
+
+
+### INSTALL
 To install from the Cordova CLI:
 
 	cordova plugin add https://gitlab.com/sistepar/app/cordova-plugin-privatevar.git
 
 
-# ANDROID
+### SET DATA IN ANDROID
 In the Java file in app Project _/src/java/com/sistepar/cordova/plugin/PrivatevarPlugin.java_ you can add all the data that you want to be returned in Json.
 	
 	/* Edit here to return data in json */
 	json.put("apiUrl", "https://api.sistepar.com");
 	json.put("apiKey", "12345678");
 
-# IOS
-Desde el Xcode ingresamos a la carpeta Plugins luego _PrivateVar.m_ y en el método dataToReturn modificamos los datos a retornar
+### SET DATA IN IOS
+From the Xcode we enter the Plugins folder then _PrivateVar.m_ and in the getDatasToReturn() method we modify the datas to return.
 
 	/* Edit here to return data in json */
 	return @{
@@ -24,7 +26,7 @@ Desde el Xcode ingresamos a la carpeta Plugins luego _PrivateVar.m_ y en el mét
              @"apiKey": @"12345",
              };
 
-# USE PLUGIN
+### USE PLUGIN
 To use it from Cordova inside the _deviceredy_ event.
 
 	/* Call the plugin */
@@ -34,7 +36,6 @@ To use it from Cordova inside the _deviceredy_ event.
 
 
 
-# Made By <a href="https://sistepar.com">sistepar.com</a>
-
-# License
-The MIT License
+>**License:** The MIT License
+>
+>**Made By** [sistepar.com](https://sistepar.com)

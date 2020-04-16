@@ -12,7 +12,7 @@
 	</engines>
 	
 	<js-module src="www/privatevar.js" name="PrivateVar">
-		<clobbers target="PrivateVar" />
+		<clobbers target="cordova.plugins.privatevar" />
 	</js-module>
 	
 	<!-- android -->

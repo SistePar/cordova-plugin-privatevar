@@ -7,7 +7,7 @@ The plugin is simple, a function "get" in JavaScript is created and it returns d
 ### INSTALL
 To install from the Cordova CLI:
 
-	cordova plugin add https://gitlab.com/sistepar.com/cordova-plugin-privatevar.git
+>cordova plugin add cordova-plugin-privatevar
 
 
 ### SET DATA IN ANDROID

@@ -23,10 +23,12 @@ Desde el Xcode ingresamos a la carpeta Plugins luego _PrivateVar.m_ y en el mét
              @"apiKey": @"12345",
              };
 
-* To use it from Cordova inside the "deviceredy" event:
+# USE PLUGIN
+. To use it from Cordova inside the _deviceredy_ event.
 
+	/* Call the plugin */
 	cordova.plugins.privatevar.get(function(data){
-		alert(JSON.stringify(data));
+	  alert(JSON.stringify(data));
 	});
 
 

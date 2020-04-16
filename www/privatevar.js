@@ -1,7 +1,8 @@
 var exec = require('cordova/exec');
+var cordova = require('cordova');
 
 module.exports = {
 	get: function(dataReceivedCallback) {
-		cordova.exec(dataReceivedCallback, null, "PrivateVar", "getDatas", []);
+		exec(dataReceivedCallback, null, "PrivateVar", "getDatas", []);
 	}
 };

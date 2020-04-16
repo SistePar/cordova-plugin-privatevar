@@ -1,9 +1,9 @@
 {
-  "name": "sistepar-cordova-plugin-privatevar",
+  "name": "cordova-plugin-sistepar-privatevar",
   "version": "1.0.0",
   "description": "Cordova Private Variable Plugin",
   "cordova": {
-    "id": "sistepar-cordova-plugin-privatevar",
+    "id": "cordova-plugin-sistepar-privatevar",
     "platforms": [
       "android",
       "ios"

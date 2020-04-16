@@ -1,9 +1,7 @@
+var exec = require('cordova/exec');
 
-var PrivateVar = function() {
+module.exports = {
+	get: function(dataReceivedCallback) {
+		cordova.exec(dataReceivedCallback, null, "PrivateVar", "getDatas", []);
+	}
 };
-
-PrivateVar.prototype.getDatas = function(dataReceivedCallback) {
-	cordova.exec(dataReceivedCallback, function() {}, "PrivateVar", "getDatas", []);
-};
-
-module.exports = PrivateVar;

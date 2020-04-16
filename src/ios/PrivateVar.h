@@ -2,10 +2,11 @@
  * PrivateVar.h Cordova Plugin Header
  */
 
+#import <Cordova/CDV.h>
 #import <Cordova/CDVPlugin.h>
 
 @interface PrivateVar : CDVPlugin
 
-- (void)get:(CDVInvokedUrlCommand*)command;
+- (void)getDatas:(CDVInvokedUrlCommand*)command;
 
 @end

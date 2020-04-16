@@ -2,8 +2,8 @@
 var PrivateVar = function() {
 };
 
-PrivateVar.prototype.get = function(getDatas) {
-	cordova.exec(getDatas, function() {}, "PrivateVar", "get", []);
+PrivateVar.prototype.get = function(dataReceivedCallback) {
+	cordova.exec(dataReceivedCallback, function() {}, "PrivateVar", "getDatas", []);
 };
 
 module.exports = PrivateVar;

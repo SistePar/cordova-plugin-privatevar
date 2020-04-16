@@ -11,13 +11,13 @@
 		<engine name="cordova" version=">=3.0.0"/>
 	</engines>
 	
-	<js-module src="www/privatevar.js" name="PrivateVar">
+	<js-module src="www/privatevar.js" name="privatevar">
 		<clobbers target="pVar" />
 	</js-module>
 	
 	<!-- android -->
 	<platform name="android">
-		<config-file target="config.xml" parent="/*">
+		<config-file target="res/xml/config.xml" parent="/*">
 			<feature name="PrivateVar">
 				<param name="android-package" value="com.sistepar.cordova.privatevar.PrivateVar"/>
 			</feature>

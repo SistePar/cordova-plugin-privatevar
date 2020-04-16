@@ -11,8 +11,8 @@
 		<engine name="cordova" version=">=3.0.0"/>
 	</engines>
 	
-	<js-module src="www/privatevar.js" name="privatevar">
-		<clobbers target="privatevar" />
+	<js-module src="www/privatevar.js" name="PrivateVar">
+		<clobbers target="PrivateVar" />
 	</js-module>
 	
 	<!-- android -->

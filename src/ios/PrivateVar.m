@@ -10,13 +10,13 @@
 - (void)getDatas:(CDVInvokedUrlCommand*)command
 {
     NSString* callbackId = command.callbackId;
-    NSDictionary* datasReturn = [self datasReturns];
+    NSDictionary* datasReturn = [self getDatasToReturn];
     CDVPluginResult* pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsDictionary:datasReturn];
 
     [self.commandDelegate sendPluginResult:pluginResult callbackId:callbackId];
 }
 
-- (NSDictionary*)datasReturns
+- (NSDictionary*)getDatasToReturn
 {
     return @{
              @"manufacturer": @"Apple",

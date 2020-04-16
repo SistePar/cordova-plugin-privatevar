@@ -12,7 +12,7 @@
 	</engines>
 	
 	<js-module src="www/privatevar.js" name="privatevar">
-		<clobbers target="navigator.privatevar" />
+		<clobbers target="privatevar" />
 	</js-module>
 	
 	<!-- android -->

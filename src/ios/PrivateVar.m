@@ -1,6 +1,8 @@
-/**
- * PrivateVar.m Cordova Plugin Implementation
- */
+/*
+  PrivateVar.m Cordova Plugin Implementation
+
+  Created by SistePar.com
+*/
 
 #import "PrivateVar.h"
 

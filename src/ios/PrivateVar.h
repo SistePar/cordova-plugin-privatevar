@@ -1,6 +1,8 @@
-/**
- * PrivateVar.h Cordova Plugin Header
- */
+/*
+  PrivateVar.h Cordova Plugin Implementation
+
+  Created by SistePar.com
+*/
 
 #import <Cordova/CDVPlugin.h>
 

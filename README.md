@@ -2,7 +2,8 @@
 
 The plugin is simple, a function "get" in JavaScript is created and it returns data of type JSON.
 
-* To install from the Cordova CLI:
+# INSTALL
+To install from the Cordova CLI:
 
 	cordova plugin add https://gitlab.com/sistepar/app/cordova-plugin-privatevar.git
 
@@ -24,7 +25,7 @@ Desde el Xcode ingresamos a la carpeta Plugins luego _PrivateVar.m_ y en el mét
              };
 
 # USE PLUGIN
-. To use it from Cordova inside the _deviceredy_ event.
+To use it from Cordova inside the _deviceredy_ event.
 
 	/* Call the plugin */
 	cordova.plugins.privatevar.get(function(data){
